@@ -1,0 +1,13 @@
+<!--comment/footer/footer.wxml-->
+<view class="footer">
+    <block wx:for="{{activity_list}}" wx:key="{{item.activity_id}}">
+      <navigator
+       url=""
+       version="release">
+        <view class="quick-entery-item">
+          <i class="iconfont {{item.img}}"></i>
+        </view>
+        <text>{{item.text}}</text>
+      </navigator>
+    </block>
+  </view>

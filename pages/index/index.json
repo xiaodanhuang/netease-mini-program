@@ -1,0 +1,7 @@
+{
+
+  "usingComponents": {
+        "activity": "../../component/activity/activity",
+        "footer": "../../component/footer/footer"
+  }
+}

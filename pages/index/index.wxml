@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="header">
+    <i class="iconfont icon-icon-15 music-search"></i>
+    <input class="input" maxlength="10" bindconfirm="searchMusic"/>
+    <i class="iconfont icon-icon-1 music-now"></i>
+    <view class="nav">
+    <text>个人推荐</text>
+    <text>主播电台</text>
+    </view>
+  </view>
+  <activity class="quick-entery"  activityList="{{activity_list}}"></activity>
+  <view class="banner">
+   <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+  </swiper> 
+  </view>
+  <footer class="footer"></footer>
+</view>
